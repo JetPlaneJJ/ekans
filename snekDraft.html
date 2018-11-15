@@ -3,11 +3,11 @@
 
 <style>
     canvas {
-       border: 5px groove #87CEFA;
-       background-color: #FFF0F5;
+        border: 5px groove #FFCECE;
+        background-color: #FFF0F5;
     }
     .canvas2 {
-        border: 1px solid #87CEFA;
+        border: 5px solid #87CEFA;
     }
 </style>
 
@@ -16,8 +16,8 @@
     let mycanvas = document.getElementById('my-canvas')
     let canvasWidth = 200
     let canvasHeight = 200
-
     let ctx = mycanvas.getContext('2d')
+
     let text = document.getElementById("textcanvas");
     let textctx = text.getContext("2d");
     textctx.font = "15px Arial";
@@ -25,7 +25,8 @@
     textctx.fillText("Red = Bomb", 10, 30);
     textctx.fillStyle = "#FACC2E";
     textctx.fillText("Yellow = Food", 10, 80);
-    
+    textctx.fillStyle = "#5F9EA0";
+    textctx.fillText("Green = Snake", 10, 130);
 
     let snake = [{
        x: 0,
